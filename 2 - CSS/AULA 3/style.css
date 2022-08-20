@@ -1,0 +1,16 @@
+.foto-perfil {
+    width: 250px;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 100% 10%; */
+    background-position: center center; /* deixar no centro e centro*/
+    background-size: cover;  /* preencher toda a tela */
+    background-attachment: fixed; /* deixar a imagem fixa quando der scroll*/
+}
+
+p {
+    color: #222222;
+}

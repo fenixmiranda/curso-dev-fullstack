@@ -1,0 +1,15 @@
+.foto-perfil {
+    width: 200px;
+    border: 2px solid #FFFFFF; /* shorthand */
+    border-radius: 50%;
+    margin: 30px;
+    padding: 0px;
+}
+
+body {
+    background: #dfdfdf;
+}
+
+p {
+    color: #222222;
+}
