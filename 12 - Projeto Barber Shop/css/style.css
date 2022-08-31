@@ -33,6 +33,7 @@ body {
     background-size: cover;
     background-image: url(../images/bg-home.jpg);
     height: 100vh; /*Viewport height = area visivel no meu navegador*/
+    background-attachment: fixed; /*Fazer a imagem ficar fixa e fazer o efeito na hora de rolar para baixo ficar legal*/
 }
 
 .home .header {
@@ -375,4 +376,73 @@ body {
 
 .gallery .gallery-wrapper div img {
     width: 100%;
+}
+
+/**************
+* LOCATION
+***************/
+
+.location {
+    padding: 100px 0;
+    background-image: url(../images/bg-location.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.location .head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.location .head .info .text span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+    color: silver;
+}
+
+.location .head .info .text span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;   
+}
+
+.location .map iframe {
+    width: 100%;
+}   
+
+/**************
+* FOOTER
+***************/
+
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 10px;
 }
