@@ -1,22 +1,32 @@
+let listaAtores = [
+    {
+        nome: 'Keanu Reeves',
+        personagem: 'Neo',
+        filme: 'The Matrix',
+    },
+    {
+        nome: 'David Prowse',
+        personagem: 'Darth Vader',
+        filme: 'Star Wars Episódios IV-VI',
+    },
+    {
+        nome: 'Bruce Wayne',
+        personagem: 'Batman',
+        filme: 'Batman - O Início',
+    },
+]
 
 
+let htmlAtores=''
 
-    let numTab = prompt('Digite qual tabuada você quer saber:')
-    let multiplicador = 0
-    /*while( multiplicador < 10 ) {
-        let resultado = numTab * multiplicador
-        document.querySelector('#tabuada').append(`<li>${numTab} * ${multiplicador} = ${resultado} </li>`)
-        multiplicador++
-    }
-    */
+for(let ator of listaAtores) {
 
+    htmlAtores += `
+        <div class="box">
+        <h1>${ator.nome}</h1><br><br>
+        <p>Interpreta o personagem ${ator.personagem} no filme ${ator.filme}
+        </div>
+    `
+}
 
-    while( multiplicador < 10 ) {
-        let resultado = numTab * multiplicador
-        let li = document.createElement('li')
-        li.innerHTML = `${numTab} * ${multiplicador} = ${resultado}`
-        document.querySelector('#tabuada').append(li)
-        multiplicador++
-    }
-
-
+document.querySelector('#section').innerHTML = htmlAtores

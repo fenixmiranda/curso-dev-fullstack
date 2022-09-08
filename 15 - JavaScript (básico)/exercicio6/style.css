@@ -1,0 +1,21 @@
+.boxes {
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-evenly;
+}
+
+.boxes p {
+    display: block;
+}
+
+
+.box {
+    background-color: rgb(199, 199, 199);
+    width: 400px;
+    height: 190px;
+    padding: 5px 15px;
+    border: 1 solid black;
+    border-radius: 6px;
+    color: black;
+}
+
