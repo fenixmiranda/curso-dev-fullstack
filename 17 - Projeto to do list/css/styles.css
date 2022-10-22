@@ -14,13 +14,28 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
 .todolist {
     max-width: 600px;
     width: 100%;
 }
+
+.todolist .cabecario {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+
+.todolist .cabecario img {
+    color: white;
+    width: 45px;
+    height: 45px;
+    margin-left: 1rem;
+}
+
 
 .todolist header {
     border-top-left-radius: 4px;
@@ -132,12 +147,32 @@ body {
     color: white;
 }
 
-
+.rodape {
+    color: white;
+    display: flex;
+    margin-top: 20rem;
+    margin-bottom: 1rem;
+}
 @keyframes collapseItem {
     0% {
         transform: rotateX(0deg);
     }
     100% {
         transform: rotateX(-90deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .todolist {
+        max-width: 600px;
+        width: 90%;
+    }
+
+    .todolist footer input {
+        width: 85%;
+    }
+    .wrapper-list button.remove {
+        opacity: 1;
+        background-color: #ff4040;
     }
 }
