@@ -10,34 +10,34 @@ const clientes = [
 //curr = current
 
 const clientesFinal = clientes.reduce((acc, curr) => {
-    if (curr.score >= 50) {
-        acc.pass.push(curr)
-    } else {
-        acc.fail.push(curr)
-    }
+     if (curr.score >= 50) {
+         acc.pass.push(curr)
+     } else {
+         acc.fail.push(curr)
+     }
 
-    return acc
-}, {
-    pass: [],
-    fail: [],
-})
+     return acc
+ }, {
+     pass: [],
+     fail: [],
+ })
 
-console.log(clientesFinal)
+ console.log(clientesFinal)
 
 
 
-const numero = [1, 2, 3, 4]
+// const numero = [1, 2, 3, 4]
 
-//'2 - 3 - 4 - 5'
+// //'2 - 3 - 4 - 5'
 
-const numerosFinal = numero.reduce((acc, curr) => {
+// const numerosFinal = numero.reduce((acc, curr) => {
     
     
-    acc += `${curr + 1} -`
+//     acc += `${curr + 1} -`
     
-    return acc
+//     return acc
 
     
-}, '')
+// }, '')
 
-console.log(numerosFinal)
+// console.log(numerosFinal)
