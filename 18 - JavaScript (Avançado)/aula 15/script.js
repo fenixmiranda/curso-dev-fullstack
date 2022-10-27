@@ -18,11 +18,6 @@ DESTRUCTURING ASSIGNMENT (desestruturação de atribuição)
 // console.log(nomeDoUsuario)
 
 
-
-
-
-
-
     function transformarEmJson(response) {
         return response.json()
     }
