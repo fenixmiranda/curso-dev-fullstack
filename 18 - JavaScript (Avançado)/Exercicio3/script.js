@@ -1,3 +1,4 @@
+
 /* Exercicio 03, trazer no console log a média da Maria de acordo com as notas que ela teve nos 6 bimestres (utilizar reduce)*/
 
 const alunos = [
